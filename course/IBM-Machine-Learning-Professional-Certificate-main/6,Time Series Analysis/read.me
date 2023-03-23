@@ -1,0 +1,14 @@
+This folder houses my project for the final course in the IBM Machine Learning Profesional Certificate
+Specialized Models: Time Series and Survival Analysis
+
+For this project I chose to analyze the IBM Stock Closing price over the past 5 years to predict the Closing Price in the past month.
+I downloaded the historical data on the IBM stock from Yahoo Finance over the date range 8/10/2022 to 8/9/2022
+
+The data can be found in the IBM.csv file of this folder
+
+I then split the data at the date 07/01/2022 to predict the closing price on data from July and August 2022
+
+For predictions I compared Exponential Smoothing models, Seasonal ARIMA models and Deep Learning LSTM models trained on previous time steps in the series.
+I found that the LSTM models were best over the entire month time horizon for forecasting but the SARIMA model was strongest on shorter time horizon forecasts. 
+Lastly I tried an ensemble model of a Seasonal ARIMA and an LSTM model trained on the residuals of the SARIMA model.
+I found that this helped to improve the model over long term predictions but the SARIMA model was better on its own in shorter time horizons.

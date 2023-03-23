@@ -1,0 +1,27 @@
+This folder houses my project for the Deep Learning course.
+
+For this project I practiced Natural Language Processing and Sentiment Analysis on the Sentiment 140 dataset from Kagle linked below:
+https://www.kaggle.com/datasets/kazanova/sentiment140
+
+This dataset contains 1.6 million tweets labeled positive or negative sentiment.
+Each class has equal representation with 800,000 positive tweets and 800,000 negative tweets exactly.
+A full description of the data is provided in the report.
+
+For the project I compared 3 types of Recurrent Neural Network (RNN) models including;
+1. Simple RNNs
+2. Long Short Term Memory (LSTM) models
+3. Gated Recurrent Unit (GRU) models.
+
+I also showed how an embedding layer can be used to help the Neural Network learn
+the dictionary of words and reduce the dimension of the data by reducing words to word vectors.
+I first trained my own embedding layer then showed how transfer learning can be used to improve the speed of the model learning rate.
+
+For transfer learning, I compared results using Stanfords Global Vectors for Word Representation (GLoVe) versus Google's Word2Vec model.
+I found that Word2Vec worked the best for my model.
+
+Lastly the project goes through methods to improve the LSTM model which was shown to be the strongest for Sentiment analysis earlier in the project
+
+In the end a model is found which is able to predict the classes with an 82.89% accuracy, with equal strength on out of sample testing data.
+This model is equally strong on positive and negative tweets with 82.98% sensitivity for positive tweets and 82.80% specificity for negative tweets.
+
+Error analysis is provided at the end of the project file.
